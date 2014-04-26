@@ -1,5 +1,5 @@
 # Reload .tmux.conf file with C-b r
-bind r source-file ~/.tmux.conf
+bind R source-file ~/.tmux.conf
 
 # Rebind C-a as activation instead of C-b
 set -g prefix C-a
@@ -17,6 +17,14 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+# Have tmux accept and use more colors
+set -g default-terminal "screen-256color"
+
 # Better statusline colors for Solarized
-set -g status-bg green
-set -g status-fg black
+set -g status-bg colour0
+set -g status-fg colour6
+
+# vim-style copying
+set-window-option -g mode-keys vi
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
