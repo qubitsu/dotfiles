@@ -2,8 +2,15 @@
 " inspired by <http://www.linuxjournal.com/article/3805>
 " inspired by <http://www.stripey.com/vim/vimrc.html>
 
+" enable 256 color support
+set t_Co=256 " needed to show colors of themes
+
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+
+" plugins installed via pathogen:
+" https://github.com/altercation/vim-colors-solarized
+" https://github.com/bling/vim-airline
 
 " required for vim-powerline to work
 set laststatus=2
@@ -66,10 +73,10 @@ set cursorline
 " closing a file
 " !screen -X title @%
 " :au[tocmd] [group] {event} {pat} [nested] {cmd}
-autocmd BufNewFile * silent !screen -X title vim
-autocmd BufRead * silent !screen -X title %
-autocmd BufWrite * silent !screen -X title %
-autocmd VimLeave * silent !screen -X title bash
+" autocmd BufNewFile * silent !screen -X title vim
+" autocmd BufRead * silent !screen -X title %
+" autocmd BufWrite * silent !screen -X title %
+" autocmd VimLeave * silent !screen -X title bash
 
 " close vim if the only window left open is a NERDTree
 " from: https://github.com/scrooloose/nerdtree
@@ -81,5 +88,4 @@ let ttimoutlen=50
 colorscheme solarized
 set background=dark
 let g:airline_theme='solarized'
-set t_Co=256 " needed to show colors of themes
 
