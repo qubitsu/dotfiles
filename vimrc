@@ -11,6 +11,7 @@ execute pathogen#infect()
 " plugins installed via pathogen:
 " https://github.com/altercation/vim-colors-solarized
 " https://github.com/bling/vim-airline
+" https://github.com/nvie/vim-flake8
 
 " required for vim-powerline to work
 set laststatus=2
@@ -20,9 +21,9 @@ filetype plugin on
 
 " sets tabwidth at 4 characters
 set tabstop=4
-
-" set shiftwidth=8
-" set expandtab
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " if a python file, expand tabs into spaces, set tabwidth at 4 characters, and
 " set autoindent commands to 4
