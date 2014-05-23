@@ -13,6 +13,10 @@ execute pathogen#infect()
 " https://github.com/bling/vim-airline
 " https://github.com/nvie/vim-flake8
 
+" put backups and swap files somewhere sane
+set backupdir=~/.vim/tmp/backup,.
+set directory=~/.vim/tmp/swap,.
+
 " required for vim-powerline to work
 set laststatus=2
 
