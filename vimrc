@@ -12,6 +12,7 @@ execute pathogen#infect()
 " https://github.com/altercation/vim-colors-solarized
 " https://github.com/bling/vim-airline
 " https://github.com/nvie/vim-flake8
+" https://github.com/mkitt/tabline.vim
 
 " put backups and swap files somewhere sane
 set backupdir=~/.vim/tmp/backup,.
