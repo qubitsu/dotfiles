@@ -34,6 +34,10 @@ set expandtab
 " set autoindent commands to 4
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
+" if a jinja2 file, expand tabs into spaces, set tabwidth at 2 characters, and
+" set autoindent commands to 2
+autocmd Filetype htmldjango setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+
 " turn on autoindent
 set autoindent
 
