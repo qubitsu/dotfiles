@@ -14,6 +14,7 @@ execute pathogen#infect()
 " https://github.com/nvie/vim-flake8
 " https://github.com/mkitt/tabline.vim
 " https://github.com/digitaltoad/vim-jade
+" https://github.com/pangloss/vim-javascript.git
 
 " put backups and swap files somewhere sane
 set backupdir=~/.vim/tmp/backup,.
@@ -112,7 +113,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " powerline symbols
 let g:airline_powerline_fonts=1
 let ttimoutlen=50
-colorscheme solarized
 set background=dark
+colorscheme solarized
 let g:airline_theme='solarized'
 
