@@ -56,6 +56,10 @@ autocmd Filetype javascript setlocal expandtab tabstop=2 softtabstop=2 shiftwidt
 " set autointend commands to 2
 autocmd Filetype jade setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
+" if a json file, expand tabs into space, set tabwidth at 2 characters, and
+" set autointend commands to 2
+autocmd Filetype json setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+
 " turn on autoindent
 set autoindent
 
