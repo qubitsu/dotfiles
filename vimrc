@@ -121,3 +121,8 @@ set background=dark
 colorscheme solarized
 let g:airline_theme='solarized'
 
+" when using splits, open the new split to the right and bottom
+" instead of default, which pushes current working buffer to the right
+" from: https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+set splitbelow
+set splitright
