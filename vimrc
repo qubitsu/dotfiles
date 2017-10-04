@@ -126,3 +126,9 @@ let g:airline_theme='solarized'
 " from: https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitbelow
 set splitright
+
+" Strip trailing whitespace on saving php, javascript, css, scss files
+autocmd BufWritePre *.php,*.css,*.scss,*.js,*.jsx %s/\s\+$//e
+
+" directives that ansible set?
+let PHP_autoformatcomment = 0
