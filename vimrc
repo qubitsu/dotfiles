@@ -60,6 +60,10 @@ autocmd Filetype jade setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 " set autointend commands to 2
 autocmd Filetype json setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
+" if an elm file, expand tabs into space, set tabwidth at 2 characters, and
+" set autointend commands to 2
+autocmd Filetype elm setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+
 " turn on autoindent
 set autoindent
 
@@ -79,7 +83,7 @@ set ignorecase
 syntax enable
 
 " always show tab bar
-set showtabline=2
+" set showtabline=2
 
 " set command line height to 2
 set ch=2
