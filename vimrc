@@ -83,7 +83,7 @@ set ignorecase
 syntax enable
 
 " always show tab bar
-" set showtabline=2
+set showtabline=2
 
 " set command line height to 2
 set ch=2
@@ -116,7 +116,7 @@ set cursorline
 
 " close vim if the only window left open is a NERDTree
 " from: https://github.com/scrooloose/nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " powerline symbols
 let g:airline_powerline_fonts=1
