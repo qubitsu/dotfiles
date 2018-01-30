@@ -39,6 +39,9 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 " if a python file, expand tabs into spaces, set tabwidth at 4 characters, and
 " set autoindent commands to 4
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+" if a python file, highlight the 81st character with the colorcolumn color to
+" assist with line length management
+autocmd Filetype python call matchadd('ColorColumn', '\%81v', 100)
 
 " if a jinja2 file, expand tabs into spaces, set tabwidth at 2 characters, and
 " set autoindent commands to 2
@@ -136,3 +139,9 @@ autocmd BufWritePre *.php,*.css,*.scss,*.js,*.jsx %s/\s\+$//e
 
 " directives that ansible set?
 let PHP_autoformatcomment = 0
+
+" highlighting the 81st column or the 81st character to help manage line length
+" use :help ctermcolors if investigating color options
+highlight ColorColumn ctermbg=LightYellow
+" set cc=81
+" call matchadd('ColorColumn', '\%81v', 100)
