@@ -11,6 +11,7 @@ execute pathogen#infect()
 " plugins installed via pathogen:
 " https://github.com/altercation/vim-colors-solarized
 " https://github.com/bling/vim-airline
+" https://github.com/vim-airline/vim-airline-themes
 " https://github.com/nvie/vim-flake8
 " https://github.com/mkitt/tabline.vim
 " https://github.com/digitaltoad/vim-jade
