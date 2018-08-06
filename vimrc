@@ -17,6 +17,9 @@ execute pathogen#infect()
 " https://github.com/digitaltoad/vim-jade
 " https://github.com/pangloss/vim-javascript.git
 
+" other plugins
+" https://github.com/davidoc/taskpaper.vim.git
+
 " put backups and swap files somewhere sane
 set backupdir=~/.vim/tmp/backup,.
 set directory=~/.vim/tmp/swap,.
