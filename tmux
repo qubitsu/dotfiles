@@ -18,8 +18,10 @@ bind k select-pane -U
 bind l select-pane -R
 
 # Have tmux accept and use more colors
-set -g default-terminal "screen-256color" # this broke syntax highlighting in tmux vim on Ubuntu
-# set -g default-terminal "xterm-256color" # this left vim with a weird background
+# set -g default-terminal "screen-256color" # this broke syntax highlighting in tmux vim on Ubuntu
+set -g default-terminal "xterm-256color" # this left vim with a weird background
+# apply true color as an override to the xterm-256color parmeter set above
+set-option -ga terminal-overrides ",xterm-256color:Tc"
 
 # Better statusline colors for Solarized
 set -g status-bg colour0

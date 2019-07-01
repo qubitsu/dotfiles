@@ -16,7 +16,8 @@ execute pathogen#infect()
 " https://github.com/mkitt/tabline.vim
 " https://github.com/digitaltoad/vim-jade
 " https://github.com/pangloss/vim-javascript.git
-
+" https://github.com/powerman/vim-plugin-autosess
+"
 " other plugins
 " https://github.com/davidoc/taskpaper.vim.git
 
