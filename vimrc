@@ -6,7 +6,9 @@
 set t_Co=256 " needed to show colors of themes
 
 " https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
+
+set packpath+=$HOME/.vim/pack/
 
 " plugins installed via pathogen:
 " https://github.com/altercation/vim-colors-solarized
@@ -24,6 +26,13 @@ execute pathogen#infect()
 " put backups and swap files somewhere sane
 set backupdir=~/.vim/tmp/backup,.
 set directory=~/.vim/tmp/swap,.
+
+" powerline symbols
+let g:airline_powerline_fonts=1
+let ttimoutlen=50
+set background=dark
+colorscheme solarized
+let g:airline_theme='solarized'
 
 " required for vim-powerline to work
 set laststatus=2
@@ -102,13 +111,17 @@ set ch=2
 " highlight the current line
 set cursorline
 
-" color settings for cursor line highlighting
+" color settings for cursor number and cursor line highlighting
+hi CursorLineNr cterm=NONE ctermbg=0
 " hi CursorLine cterm=NONE ctermbg=darkgrey
 " old setting: hi CursorLine   cterm=NONE ctermbg=darkgrey
 " Full example parameters: hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred
 
+" highlight the current column
+set cursorcolumn
+
 " color settings for column line highlighting
-":hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred
+hi CursorColumn cterm=NONE ctermbg=0
 
 " type :gf over filename to get list of colors
 " $VIMRUNTIME/rgb.txt
@@ -125,13 +138,6 @@ set cursorline
 " close vim if the only window left open is a NERDTree
 " from: https://github.com/scrooloose/nerdtree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" powerline symbols
-let g:airline_powerline_fonts=1
-let ttimoutlen=50
-set background=dark
-colorscheme solarized
-let g:airline_theme='solarized'
 
 " when using splits, open the new split to the right and bottom
 " instead of default, which pushes current working buffer to the right
