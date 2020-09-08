@@ -37,6 +37,13 @@ let g:airline_theme='solarized'
 " required for vim-powerline to work
 set laststatus=2
 
+" use the wildmenu
+set wildmenu
+" set wildmode=longest,list
+" set wildmode=longest:full,list
+" set wildmode=longest:full,full
+set wildmode=longest:list,full
+
 " turn filetype and plugin scripts on; indent left out for momentary sanity
 filetype plugin on
 
