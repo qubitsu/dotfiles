@@ -8,8 +8,8 @@ bind C-a send-prefix
 
 # Use | for horizontal split instead of %
 unbind %
-bind | split-window -h
-bind - split-window -v
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
 # Use vim-style directions to select panes
 bind h select-pane -L
